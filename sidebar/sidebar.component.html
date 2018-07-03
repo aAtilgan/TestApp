@@ -1,0 +1,55 @@
+<nav ng-app ="">
+
+  <ul>
+    <li>
+      <a routerLink="menu" [class.activated]="currentUrl == '/menu'">
+        <i class="material-icons">supervised_user_circle</i>
+      </a>
+    </li>
+    <li>
+      <a routerLink="posts" [class.activated]="currentUrl == '/posts'">
+          <i class="material-icons">message</i>
+        </a>
+      </li>
+    <li>
+      <a routerLink="plane" [class.activated]="currentUrl == '/plane'">
+      <i class="material-icons">airplanemode_active</i>
+    </a>
+    </li>
+    <li>
+      <a routerLink="phone" [class.activated]="currentUrl == '/phone'">
+        <i class="material-icons">phone</i>
+    </a>
+    </li>
+    <li>
+        <a routerLink="location" [class.activated]="currentUrl == '/location'">
+          <i class="material-icons">add_location</i>
+      </a>
+      </li>
+      <li>
+          <a routerLink="clock" [class.activated]="currentUrl == '/clock'">
+            <i class="material-icons">access_time</i>
+        </a>
+        </li>
+
+        <li>
+            <a routerLink="play" [class.activated]="currentUrl == '/play'">
+              <i class="material-icons">play_circle_filled</i>
+          </a>
+        </li>
+        <li>
+            <a routerLink="video" [class.activated]="currentUrl == '/video'">
+              <i class="material-icons">videocam</i>
+          </a>
+        </li>
+        <li>
+            <a routerLink="next" [class.activated]="currentUrl == '/next'" >
+              <button class="material-icons" ng-click = "this.counter = this.counter + 1" ng-init="count = 0">arrow_forward</button>
+              <p>{{this.counter}}</p>
+          </a>
+        </li>
+  </ul>
+
+  
+
+</nav>
